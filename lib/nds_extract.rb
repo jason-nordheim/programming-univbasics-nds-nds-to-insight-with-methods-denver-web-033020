@@ -44,5 +44,5 @@ def directors_totals(nds)
     result[director_name] = director_sum
     index += 1
   end
-  nil
+  return result
 end
