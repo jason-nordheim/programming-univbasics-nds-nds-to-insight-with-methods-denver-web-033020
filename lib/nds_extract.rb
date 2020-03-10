@@ -27,8 +27,8 @@ def directors_totals(nds)
 
   i = 0
   while i < nds.length do
-
-    i += 1 
+    d_info = gross_for_director(nds[i])
+    i += 1
   end
 
 end
