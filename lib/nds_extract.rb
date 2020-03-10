@@ -5,21 +5,20 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   # Array => Hash (:name, :movies => Array[Hash{:title,:studio,:worldwide_grosses,:release_year}])
-  output = {}
+  worldwide_gross = 0
   index = 0
+  # loop through directors
   while index < director_data.length do
-    total = 0
-    movies = director_data[index][:movies]
+    # loop through movies
     inner_index = 0
-    while inner_index < movies.length do
-      total += movies[inner_index][:worldwide_gross]
+    while inner_index < director_data[index][:movies].length do
+      movie_gross = director_data[index][:movies][inner_index][:worldwide_gross]
+      worldwide_gross += movie_gross
       inner_index += 1
     end
-    name = director_data[:name]
-    output[name] = total
     index += 1
   end
-  return output 
+  return worldwide_gross
 end
 
 # Write a method that, given an NDS creates a new Hash
