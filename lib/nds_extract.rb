@@ -9,6 +9,12 @@ def gross_for_director(director_data)
   index = 0
   while index < director_data.length do
     name = director_data[:name]
+    inner_index = 0
+    while inner_index < director_data[:movies].length do
+
+      inner_index += 1
+    end
+    index += 1 
   end
 end
 
