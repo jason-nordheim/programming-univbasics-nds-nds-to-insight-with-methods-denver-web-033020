@@ -7,7 +7,6 @@ def gross_for_director(director_data)
   # Array => Hash (:name, :movies => Array[Hash{:title,:studio,:worldwide_grosses,:release_year}])
   output = {}
   index = 0
-
   while index < director_data.length do
     director_total = 0
     movies = director_data[index][:movies]
