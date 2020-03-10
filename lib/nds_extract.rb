@@ -24,7 +24,6 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-
   i = 0
   while i < nds.length do
     name = nds[i][:name]
