@@ -15,7 +15,7 @@ def gross_for_director(director_data)
       sum += director_data[index][:movies][inner_index][:worldwide_gross]
       inner_index += 1
     end
-    output[na]
+    output[name] = sum 
     index += 1
   end
   return output
