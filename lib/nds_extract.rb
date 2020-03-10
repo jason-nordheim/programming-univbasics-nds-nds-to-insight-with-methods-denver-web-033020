@@ -32,5 +32,5 @@ def directors_totals(nds)
     result[name] = d_info[name]
     i += 1
   end
-
+  return result
 end
