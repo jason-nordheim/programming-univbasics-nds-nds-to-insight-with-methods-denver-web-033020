@@ -9,6 +9,7 @@ def gross_for_director(director_data)
   i = 0
   while i < director_data.length do
     movie = director_data[i]
+    gross += movie[:worldwide_gross]
   end
 
 
