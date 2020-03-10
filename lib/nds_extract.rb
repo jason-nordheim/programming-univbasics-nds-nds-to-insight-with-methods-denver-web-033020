@@ -11,6 +11,7 @@ def gross_for_director(director_data)
   while i < director_data.length do
     movie = director_data[i]
     gross += movie[:worldwide_gross]
+    i += 1 
   end
   result = {name => sum}
   return result
@@ -24,7 +25,10 @@ end
 def directors_totals(nds)
   result = {}
 
-  # Array => Hash (:name, :movies => Array[Hash{:title,:studio,:worldwide_grosses,:release_year}])
-  # loop through directors
+  i = 0
+  while i < nds.length do
+
+
+  end
 
 end
