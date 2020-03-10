@@ -12,7 +12,7 @@ def gross_for_director(director_data)
     movie = director_data[i]
     gross += movie[:worldwide_gross]
   end
-  result = {}
+  result = {name => sum}
 
 end
 
