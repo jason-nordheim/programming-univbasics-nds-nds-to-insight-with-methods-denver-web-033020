@@ -34,6 +34,7 @@ def directors_totals(nds)
       gross += movie_amt
       j += 1
     end
+    result[name] = gross
   end
   return result
 end
