@@ -27,6 +27,9 @@ def directors_totals(nds)
   i = 0
   while i < nds.length do
     name = nds[i][:name]
+    gross = 0
+    j = 0
+    while j < nds[i][:movies]
   end
   return result
 end
