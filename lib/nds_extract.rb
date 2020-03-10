@@ -16,10 +16,10 @@ def gross_for_director(director_data)
       inner_index += 1
     end
     name = director_data[:name]
-    output[name] = total 
+    output[name] = total
     index += 1
   end
-  return
+  return output 
 end
 
 # Write a method that, given an NDS creates a new Hash
