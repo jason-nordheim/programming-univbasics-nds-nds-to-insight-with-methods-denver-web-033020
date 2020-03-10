@@ -8,7 +8,7 @@ def gross_for_director(director_data)
   output = {}
   index = 0
   while index < director_data.length do
-
+    name = director_data[:name]
   end
 end
 
