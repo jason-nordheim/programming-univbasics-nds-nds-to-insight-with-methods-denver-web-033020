@@ -29,7 +29,10 @@ def directors_totals(nds)
     name = nds[i][:name]
     gross = 0
     j = 0
-    while j < nds[i][:movies]
+    while j < nds[i][:movies].length do
+
+      j += 1 
+    end
   end
   return result
 end
