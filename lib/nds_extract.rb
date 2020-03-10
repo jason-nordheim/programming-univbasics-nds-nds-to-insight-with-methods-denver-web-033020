@@ -8,14 +8,14 @@ def gross_for_director(director_data)
   output = {}
   index = 0
   while index < director_data.length do
-    name = director_data[index][:name]
-    sum = 0
+    d_name = director_data[index][:name]
+    d_sum = 0
     inner_index = 0
     while inner_index < director_data[index][:movies].length do
       sum += director_data[index][:movies][inner_index][:worldwide_gross]
       inner_index += 1
     end
-    output[name] = sum 
+    output[name] = sum
     index += 1
   end
   return output
